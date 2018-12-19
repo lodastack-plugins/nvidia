@@ -48,7 +48,7 @@ func main() {
 		valueMap["clocks.cores_MHz"] = *st.Clocks.Cores
 
 		tags := make(map[string]string)
-		tags["idx"] = fmt.Sprintf("%s", i)
+		tags["idx"] = fmt.Sprintf("%d", i)
 
 		ts := time.Now().UnixNano()
 		for k, v := range valueMap {
