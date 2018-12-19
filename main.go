@@ -31,7 +31,7 @@ func main() {
 		devices = append(devices, device)
 	}
 
-	valueMap := make(map[string]int)
+	valueMap := make(map[string]uint)
 	for i, device := range devices {
 		st, err := device.Status()
 		if err != nil {
@@ -48,7 +48,7 @@ func main() {
 		valueMap["clocks.cores_MHz"] = *st.Clocks.Cores
 
 		tags := make(map[string]string)
-		tags["idx"] = i
+		tags["idx"] = string(i)
 
 		ts := time.Now().UnixNano()
 		for k, v := range valueMap {

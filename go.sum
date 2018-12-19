@@ -1,0 +1,4 @@
+github.com/NVIDIA/gpu-monitoring-tools v0.0.0-20181114021304-b70474fb8511 h1:A9x/8mtuZ6Sg3QYV5bP2QCHQ53aLVaAd/G8EAZmujtg=
+github.com/NVIDIA/gpu-monitoring-tools v0.0.0-20181114021304-b70474fb8511/go.mod h1:nMOvShGpWaf0bXwXmeu4k+O4uziuaEI8pWzIj3BUrOA=
+github.com/lodastack/models v0.0.0-20181127092258-af95be5912f4 h1:vLrWQpSFuciekiLrVcHOoEzkVr9s8ooR5MZNUbEx22c=
+github.com/lodastack/models v0.0.0-20181127092258-af95be5912f4/go.mod h1:6DwdhCS6s4P+9M6rjiNshSdu7T8KqHJcTHnrQVfn1+U=
