@@ -46,9 +46,9 @@ func main() {
 		valueMap["utilization.decoder"] = *st.Utilization.Decoder
 		valueMap["clocks.memory_MHz"] = *st.Clocks.Memory
 		valueMap["clocks.cores_MHz"] = *st.Clocks.Cores
-		valueMap["memory.used_MiB"] = *st.Memory.Global.Used
-		valueMap["memory.used_percent"] = int64(*st.Memory.Global.Used / (*st.Memory.Global.Used + *st.Memory.Global.Free))
-		valueMap["pci.BAR1.used_MiB"] = *st.PCI.BAR1Used
+		valueMap["memory.used_MiB"] = uint(*st.Memory.Global.Used)
+		valueMap["memory.used_percent"] = uint(*st.Memory.Global.Used / (*st.Memory.Global.Used + *st.Memory.Global.Free))
+		valueMap["pci.BAR1.used_MiB"] = uint(*st.PCI.BAR1Used)
 		valueMap["pci.throughput.rx_MBps"] = *st.PCI.Throughput.RX
 		valueMap["pci.throughput.tx_MBps"] = *st.PCI.Throughput.TX
 
